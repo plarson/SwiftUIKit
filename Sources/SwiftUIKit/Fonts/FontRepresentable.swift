@@ -16,7 +16,7 @@ import class AppKit.NSFont
 public typealias FontRepresentable = NSFont
 #endif
 
-#if os(iOS) || os(tvOS) || os(watchOS)
+#if os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
 import class UIKit.UIFont
 
 /**

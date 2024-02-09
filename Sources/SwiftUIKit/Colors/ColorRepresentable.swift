@@ -16,7 +16,7 @@ import class AppKit.NSColor
 public typealias ColorRepresentable = NSColor
 #endif
 
-#if os(iOS) || os(tvOS) || os(watchOS)
+#if os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
 import class UIKit.UIColor
 
 /**

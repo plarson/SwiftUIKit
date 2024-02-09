@@ -12,7 +12,7 @@ public extension Image {
     
     /// Create an image from a certain ``ImageRepresentable``.
     init(image: ImageRepresentable) {
-        #if os(iOS) || os(watchOS) || os(tvOS)
+        #if os(iOS) || os(watchOS) || os(tvOS) || os(visionOS)
         self.init(uiImage: image)
         #elseif os(macOS)
         self.init(nsImage: image)

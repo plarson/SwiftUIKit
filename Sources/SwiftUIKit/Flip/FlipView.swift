@@ -92,7 +92,7 @@ private extension View {
     }
     
     func withSwipeGesture(action: @escaping FlipAction) -> some View {
-        #if os(tvOS)
+        #if os(tvOS) || os(visionOS)
         self
         #else
         self.onSwipeGesture(
